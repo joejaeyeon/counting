@@ -7,12 +7,16 @@
     <title>Counting</title>
 </head>
 <body>
+    <div style="text-align: center">
     <h1>안녕하세요, 글자를 세어 보세요!</h1>
-    <a href="{%url 'about'%}">About</a>
+    <a href="{%url 'about'%}"><strong>About Counting</strong></a>
+    <br><br>
+    <a href="http://speller.cs.pusan.ac.kr/">맞춤법 검사하기</a>
     <form action="{%url 'result'%}">
-        <textarea cols='40' rows='10' name="fulltext"></textarea>
+        <textarea cols='60' rows='20' name="fulltext"></textarea>
         <br>
         <input type="submit" value="Count!">
     </form>
+    </div>
 </body>
 </html>
