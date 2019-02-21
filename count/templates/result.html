@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Counting</title>
+</head>
+<body>
+    <h1>입력한 텍스트는 <!--단어 수-->{{nums}}개 단어로 이루어져있습니다.</h1>
+    <a href="{%url 'home'%}">다시 입력하기</a>
+    <h2>입력한 텍스트 : </h2>
+    {{full}}
+    <h2>입력된 단어와 단어수는 다음과 같습니다.</h2>
+    {% for word, howmany in dictionary %}
+    {{word}} : {{howmany}}
+    <br>
+    {%endfor%}
+</body>
+</html>
